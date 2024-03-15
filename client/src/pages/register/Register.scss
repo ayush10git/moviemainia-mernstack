@@ -1,0 +1,86 @@
+@import "../../common/colors.scss";
+
+.register{
+    width: 100%;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerWrapper{
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    background: $secondary-color;
+}
+.registerLeft, .registerRight{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+}
+
+.registerLogo{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: $font-primary
+}
+
+.registerDesc{
+    font-size: 24px;
+}
+
+.registerBox{
+    height: 400px;
+    padding: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    span{
+        text-align: center;
+        color: $font-seconadry;
+    }
+}
+
+.registerInput{
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.registerInput:focus{
+    outline: none;
+}
+
+.registerButton{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.registerForgot{
+    text-align: center;
+}
+
+.registerRegisterButton{
+    height: 50px;
+    border-radius: 10px;
+    width: 60%;
+    align-self: center;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}

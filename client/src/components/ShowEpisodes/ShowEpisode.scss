@@ -1,0 +1,22 @@
+@import "../../common/colors.scss";
+
+.episodes-wrapper{
+    display: flex;
+}
+
+.left-side .thumbnail img{
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $font-primary;
+    line-height: 30px;
+    span{
+        color: $font-seconadry;
+    }
+}

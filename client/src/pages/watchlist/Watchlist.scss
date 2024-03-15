@@ -1,0 +1,64 @@
+@import "../../common/colors.scss";
+
+.watchlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
+  margin-top: 20px;
+}
+
+.watchlist-item {
+  width: 250px;
+  background: $secondary-color;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  overflow: hidden; 
+}
+
+.watchlist-item:hover {
+  transform: scale(1.05);
+}
+
+.watchlist-top {
+  height: 300px;
+  overflow: hidden; 
+}
+
+.watchlist-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.watchlist-bottom {
+  padding: 20px; 
+}
+
+.watchlist-info {
+  color: $font-primary;
+}
+
+.watchlist-info h4 {
+  font-size: 20px; 
+  margin-bottom: 10px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.3s ease;
+    pointer-events: none;
+}
+.watchlist-item:hover {
+    .overlay{
+        background-color: rgba(0,0,0,0.5);
+    }
+  .add-to-watchlist {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../common/colors.scss";
+
+.movie-list, .show-list{
+    margin: 20px 0;
+    h2{
+        color: $font-seconadry;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+}
+
+.loader{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+// .movie-container{
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+//     grid-gap: 15px;
+// }
